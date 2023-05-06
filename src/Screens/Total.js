@@ -6,7 +6,8 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import { } from 'react-native'
 import { COLORS } from '../Global/Styles'
-const Total = () => {
+import TODO from '../Component/Todo'
+const Total = ({navigation}) => {
   return (
     <View style={{flex:1}} >
       <View style={{ backgroundColor: '#FFF',flex:1.6 }}>
@@ -67,7 +68,15 @@ const Total = () => {
             </View>
           </View>
         </View>
+        <View style={{ marginTop: 'auto', alignItems: 'flex-end', marginVertical: 10, marginHorizontal: 10 }}>
+        <View>
+          <View>
+            <TODO navigation={navigation} />
+          </View>
+        </View>
       </View>
+      </View>
+      
     </View>
   )
 }

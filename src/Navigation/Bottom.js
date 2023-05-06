@@ -6,7 +6,7 @@ import Trans  from "../Screens/AuthScreens/Trans.js"
 import Stats  from "../Screens/AuthScreens/Stats.js"
 import Accounts  from "../Screens/Accounts.js"
 import More  from "../Screens/More.js"
-
+import Entypo from 'react-native-vector-icons/Entypo'
 import { COLORS } from "../Global/Styles";
 
 const Tab = createBottomTabNavigator();
@@ -59,7 +59,9 @@ const Tabs = () => {
                             );
                         case "More":
                             return (<>
-                           
+                            {/* <Entypo name={'dots-three-horizontal'} size={18} color={'#000'} style={{
+                                        tintColor: tintColor,
+                                    }}/> */}
                                 <Image
                                     source={require('../../assets/icons/heart_icon.png')}
                                     resizeMode="contain"

@@ -1,16 +1,22 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import Daily from '../Daily'
+import Income from '../Income'
 import Expenses from '../Expenses'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import Headerwithselection from '../../Component/headerwithselection'
 const Tab = createMaterialTopTabNavigator();
 
 const Stats = () => {
   return (
-    <Tab.Navigator>
-    <Tab.Screen name="Daily" component={Daily} />
-    <Tab.Screen name="Expenses" component={Expenses} />
-  </Tab.Navigator>
+    <>
+      <Headerwithselection />
+      <Tab.Navigator>
+
+        <Tab.Screen name="Income" component={Income} />
+        <Tab.Screen name="Expenses" component={Expenses} />
+      </Tab.Navigator>
+    </>
+
   )
 }
 
